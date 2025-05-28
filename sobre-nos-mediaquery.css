@@ -1,0 +1,113 @@
+@media screen and (max-width: 760px){   
+    nav, ul{
+        display: none;
+    }
+
+    header{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .imagem-responsiva{
+        display: flex;
+        width: 140px;
+        height: 140px;
+        background-image: url(../img/logo.png);
+        background-size: cover;
+        margin: 0px 0px 0px 20px;
+    }
+
+    .menu-responsivo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px 20px 0px 0px;
+        width: 50px;
+        height: 50px;
+        font-size: 1.7rem;
+        color: var(--dourado-300);
+    }
+
+    main{
+        height: fit-content;
+        justify-content: space-evenly;
+    }
+
+    .secao-informacao{
+        height: fit-content;
+    }
+
+    .informacao{
+        scale: 0.9;
+        width: 90%;
+        padding: 0px 0px 35px 0px;
+        height: fit-content;
+    }
+
+    .icone-titulo{
+        justify-content: center;
+        margin: 15px 0px 0px 0px;
+    }
+
+    .titulo, .icone{
+        margin: 0px 3px 0px 3px;
+        font-size: 1.5rem;
+    }
+
+    .descricao-titulo{
+        width: 90%;
+        height: fit-content;
+        text-align: center;
+        font-size: 1.1rem;
+        font-weight: normal;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .secao-valores{
+        height: fit-content;
+    }
+
+    .valores{
+        scale: 0.9;
+        width: 90%;
+    }
+
+    #topicos-valores{
+        width: 90%;
+        margin: 5px 0px 0px 0px;
+        height: fit-content;
+    }
+
+    .topico{
+        scale: 0.9;
+        width: 70%;
+        margin: 15px 0px 15px 0px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 25px;
+        padding: 10px;
+        border: 2px solid var(--dourado-300);
+    }
+
+    .topico p{
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+   
+    footer{
+        width: 100%;
+    }
+
+    footer p{
+        width: 80%;
+        text-align: center;
+        font-size: 0.9rem;
+        font-weight: normal;
+    }
+}
+

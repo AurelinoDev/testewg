@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./sobre-nos.css">
+    <link rel="stylesheet" href="./sobre-nos-mediaquery.css">
+    <link rel="stylesheet" href="./sobre-nos-mediaquery-500px.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/e0b8a276c3.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    
+	<link rel="manifest" href="../favicon_io/site.webmanifest">
+    <title>Sobre Nós</title>
+
+</head>
+</head>
+<body>
+    <header>
+      
+        <!-- Código responsivo -->
+        <a href="index.html">
+            <div class="imagem-responsiva" alt="Logo WG">
+                <!-- imagem chamada no css/sobre-nos-mediaquery.css -->
+            </div>
+        </a>
+
+      <div id="menu-lateral" class="menu-lateral">
+          <button id="fechar" onclick="fecharMenu()"> x </button>
+          <div class="item-menu">
+            <a href="index.html">Início</a>
+          </div>
+          <div class="item-menu">
+            <a href="sobre-nos.html">Sobre Nós</a>
+          </div>
+          <div class="item-menu">
+            <a href="servicos.html">Serviços</a>
+          </div>
+          <div class="item-menu">
+            <a href="contatos.html">Contatos </a>
+          </div>
+        </div>
+        <div class="menu-responsivo">
+            <!-- futuramente alterado -->
+              <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </div>
+
+        <ul>
+            <a href="index.html">Inicio</a>
+            <!-- <a href="sobre-nos.html">Sobre Nós</a> -->
+            <a href="servicos.html">Serviços</a>
+            <a href="contatos.html">Contatos</a>
+        </ul>
+
+    </header>
+    <main>
+        <section class="secao-informacao">
+            <div class="informacao">
+                <div class="icone-titulo">
+                    <div class="icone">
+                        <!-- icone usuário -->
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <h1 class="titulo">Quem somos?</h1>
+                </div>
+                <p class="descricao-titulo">
+                    A WG é uma empresa do mercado segurador e empresarial especializada em
+                    segurança corporativa e proteção de patrimônio. Atuamos em todo o território
+                    nacional, oferecendo soluções eficazes e serviços de alta qualidade para
+                    proteger os negócios dos nossos clientes.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-informacao">
+            <div class="informacao">
+                <div class="icone-titulo">
+                    <div class="icone">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h1 class="titulo">Profissionais Qualificados</h1>
+                </div>
+                 <p class="descricao-titulo">
+                    Nossa equipe é composta por profissionais altamente qualificados e experientes, especializados em diversas áreas do mercado segurador e empresarial. Estamos comprometidos em oferecer o melhor atendimento e soluções personalizadas para atender às necessidades de cada cliente.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-informacao">
+            <div class="informacao">
+                <div class="icone-titulo">
+                    <div class="icone">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h1 class="titulo">Missão</h1>
+                </div>
+                <p class="descricao-titulo">
+                    Proporcionar serviços diferenciados, pautados na ética, no respeito e na responsabilidade, promovendo a segurança e o bem-estar físico, mental e social dos nossos clientes, visando o reconhecimento empresarial referente a nossa qualidade, confiabilidade e eficiência dos nossos serviços.
+                </p>
+            </div>
+        </section>
+
+        <section class="secao-valores">
+            <div class="valores">
+                <div class="icone">
+                    <i class="fa-solid fa-bookmark"></i>
+                </div>
+                <h1 class="titulo">Valores</h1>
+            </div>
+            <div id="topicos-valores">
+                <div class="topico">
+                    <p>
+                        Honestidade e responsabilidade
+                    </p>
+                </div>
+                <div class="topico">
+                    <p>
+                        Envolvidos com o resultado dos clientes
+                    </p>
+                </div>
+                <div class="topico">
+                    <p>
+                        Sempre em busca da melhoria e evolução
+                    </p>
+                </div>
+                <div class="topico">
+                    <p>
+                        Alto padrão de qualidade
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>
+            WG Consultoria e Monitoramento - 2025 © todos os direitos reservados
+        </p>
+    </footer>
+    
+</body>
+<script>
+		function abrirMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.add("aparecer");
+		}
+
+		function fecharMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.remove("aparecer");
+		}
+
+	</script>
+</html>

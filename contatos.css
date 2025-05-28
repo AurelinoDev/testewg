@@ -1,0 +1,119 @@
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+@import url(index.css);
+
+/* css contato */
+
+.menu-responsivo{
+  display: none;
+}
+
+header > ul > a{
+  text-decoration: none;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.imagem-responsiva{
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+}
+
+#text-localizacao {
+  margin: 50px 0px 20px 0px;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#localizacao iframe{
+  width: 80%;
+  height: 600px;
+  margin-top: 30px;
+  border-radius: 20px;
+}
+
+#localizacao{
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+#text-contato{
+  height: fit-content;
+  margin-top: 80px;
+  width: 100%;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-contato h2 {
+  font-size: 2rem;
+}
+
+#text-contato p {
+  text-align: center;
+  margin-top: 2px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+/* Código de Lucas */
+.botao-contato{
+  width: 350px;
+  height: 70px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #D9BB62;
+}
+
+.p-icone {
+  width: 120px;
+  height: 38px;
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  align-items: center;
+  /* justify-content: center; */
+  /* border: 1px solid red; */
+  color: #D9BB62;
+}
+
+.icone{
+  width: 70px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+  font-size: 1.5rem;
+  color: #D9BB62;
+}
+
+.icone i{
+  margin-top: -1px;
+}
+
+#WhatsApp-fixed a img{
+  width: 50px;
+}
+#WhatsApp-fixed a img{
+  width: 50px;
+  position: fixed;
+  right: 1%;
+}

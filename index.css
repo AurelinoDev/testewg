@@ -1,0 +1,356 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(../font/Inter.ttf);
+}
+:root {
+  --dourado-100: #D9BB62;
+  --dourado-200: #D9B166;
+  --dourado-300: #BF9A56;
+  --cinza-400: #D9D9D9;
+  --withe: #FFFFFF;
+  --black: #000000;
+  --interRegular: 'Inter';
+  --interBold: 'Inter';
+}
+
+.dourado{
+  color: var(--dourado-100);
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Inicio */
+
+header{
+  background-color: #000;
+  height: 140px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.imagem-responsiva{
+  width: 140px;
+  height: 140px;
+  background-image: url(../img/logo.png);
+  background-size: cover;
+}
+
+.menu-lateral{
+  background-color: var(--black);
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: -250px;
+  z-index: 3;
+  transition: all 0.7s;
+}
+
+.aparecer{
+    right: 0 !important;
+}
+
+#fechar{
+  /* border: 1px solid red; */
+  /* font-family: var(--interBold); */
+  color: var(--dourado-100);
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  background: transparent;
+  border: 1px solid var(--dourado-100);
+}
+
+.item-menu{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
+  margin: 50px;
+  color: var(--dourado-300);
+}
+
+.item-menu a{
+  font-size: 25px;
+}
+
+header img{
+  width: 11rem;
+  height: 11rem;
+  margin-left: 60px;
+  left: 60px;
+}
+
+ul{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-right: 60px;
+}
+
+a{
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: var(--dourado-100);
+}
+a:hover{
+  color: var(--dourado-300);
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+/* slides */
+
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 608px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: margin-left 0.5s ease-in-out;
+}
+
+.slide {
+  width: 1200px;
+  position: relative;
+}
+
+.slide img {
+  width: 1200px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slide h1 {
+  position: absolute;
+  width: 1200px;
+  text-align: center;
+  font-size: 45px;
+  bottom: 50px;
+  left: 50%;
+  color: white;
+}
+
+/* Navegação manual & Navegação automática */
+.navigation-manual{
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 2;
+}
+.navigation-auto{
+  position: absolute;
+  width: 100%;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  z-index: 1;
+}
+
+.manual-btn{
+  border: 2px solid var(--dourado-100);
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+}
+
+.auto-btn1, .auto-btn2, .auto-btn3 {
+  border: 2px solid var(--dourado-100);
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: transparent;
+}
+.manual-btn:hover {
+  background: var(--withe);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#radio1:checked ~ .slides {
+  margin-left: 0%;
+}
+#radio2:checked ~ .slides {
+  margin-left: -100%;
+}
+#radio3:checked ~ .slides {
+  margin-left: -200%;
+}
+
+/* O slide que estiver, o botão fica branco*/
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: var(--withe);
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: var(--withe);
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: var(--withe);
+} 
+
+/* Título animado */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translate(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%);
+  }
+}
+
+/* Aplicar animação apenas no H1 */
+#radio1:checked ~ .slides .slide:nth-child(1) h1,
+#radio2:checked ~ .slides .slide:nth-child(2) h1,
+#radio3:checked ~ .slides .slide:nth-child(3) h1 {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+
+/* saiba mais */
+.saiba{
+  padding-top:30px ;
+  text-align: center;
+  margin: auto;
+  height:100px ;
+}
+.linha{
+  border: 2px solid var(--dourado-100);
+  border-radius: 8px;
+  width: 75%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+/* cartoes */
+
+.cartoes{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 8px;
+  margin: auto;
+  margin-top: 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.informacoes {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid var(--cinza-400);
+  border-radius: 25px;
+  width: 390px;
+  height: 500px;
+}
+
+.informacoes img {
+  padding-top: 25px;
+  padding-left: 70px;
+  padding-right: 70px;
+  width: 250px;
+  height: 306px;
+}
+
+.informacoes p {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.47); 
+  font-weight: bold;
+}
+
+/* Botão Confira */
+.confira {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 250px;
+  height: 60px;
+  font-size: 1.5rem;
+  background: var(--dourado-100);
+  border-radius: 40px;
+  color: var(--black);
+  font-family: var(--interBold);
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+
+.confira:hover {
+  color: var(--black);
+  background: var(--dourado-300);
+  cursor: pointer;
+}
+
+/* Ícone dentro do botão */
+.confira i {
+  font-size: 30px;
+  margin-top: 8px;
+  margin-left: 10px;
+  transition: transform 0.3s ease;
+}
+
+.animated-arrow {
+  display: inline-block;
+  animation: slideRight 0.6s ease-in-out infinite alternate;
+}
+
+/* footer */
+
+footer{
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--dourado-100);
+  background-color: #000;
+  height: 120px;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+footer p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: var(--interRegular);
+    color: var(--dourado-100);
+}
+
+/* Animação da seta do botão Confira */
+@keyframes slideRight {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(8px);
+  }
+}

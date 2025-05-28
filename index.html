@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./index.css">
+	<link rel="stylesheet" href="./index.mediaquery.css">
+
+    <script src="https://kit.fontawesome.com/e0b8a276c3.js" crossorigin="anonymous"></script>
+
+    <title>Inicio</title>
+
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+	<link rel="manifest" href=".//favicon_io/site.webmanifest">
+</head>
+<body>
+
+	<header>
+		<!-- Código responsivo -->
+        <a href="index.html">
+            <div class="imagem-responsiva" alt="Logo WG">
+                <!-- imagem chamada no css/sobre-nos-mediaquery.css -->
+            </div>
+        </a>
+
+		 <div id="menu-lateral" class="menu-lateral">
+				<button id="fechar" onclick="fecharMenu()"> x </button>
+				<div class="item-menu">
+					<a href="index.html">Início</a>
+				</div>
+				<div class="item-menu">
+					<a href="sobre-nos.html">Sobre Nós</a>
+				</div>
+				<div class="item-menu">
+					<a href="servicos.html">Serviços</a>
+				</div>
+				<div class="item-menu">
+					<a href="contatos.html">Contatos </a>
+				</div>
+				</div>
+
+        <div class="menu-responsivo">
+			 <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </div>
+		
+		<ul>
+		<a href="index.html">Inicio</a>
+		<a href="sobre-nos.html">Sobre Nós</a>
+		<a href="servicos.html">Serviços</a>
+		<a href="contatos.html">Contatos</a>
+		</ul>
+	</header>
+
+	<main>
+
+		
+  <div class="slider">
+    <!-- Radios -->
+    <input type="radio" name="radio-btn" id="radio1" checked>
+    <input type="radio" name="radio-btn" id="radio2">
+    <input type="radio" name="radio-btn" id="radio3">
+
+    <!-- Slides -->
+    <div class="slides">
+      <div class="slide">
+        <img src="../img/caminhao.jpg" alt="Imagem de um caminhão">
+        <h1>Na estrada ou na cidade, sua carga estará <span class="dourado">segura.</span></h1>
+      </div>
+      <div class="slide">
+        <img src="../img/imagem2.jpg" alt="Imagem representativa relacionada aos serviços prestados">
+        <h1><span class="dourado">Proteção </span>e <span class="dourado">agilidade</span>
+			em qualquer rota, a <span class="dourado">qualquer hora.</span></h1>
+      </div>
+      <div class="slide">
+        <img src="../img/imagem3.jpg" alt="Imagem representativa relacionada aos serviços prestados">
+        <h1><span class="dourado">Com a WG</span>, seu trajeto tem segurança do <span class="dourado">início ao fim.</span></h1>
+      </div>
+    </div>
+
+    <!-- Navegação Manual -->
+    <div class="navigation-manual">
+		<label for="radio1" class="manual-btn"></label>
+		<label for="radio2" class="manual-btn"></label>
+		<label for="radio3" class="manual-btn"></label>
+	</div>
+
+	<div class="navigation-auto">
+		<div class="auto-btn1"></div>
+		<div class="auto-btn2"></div>
+		<div class="auto-btn3"></div>
+	</div>
+  </div>
+
+	<div class="saiba">
+		<h1>Saiba Mais</h1>
+		<div class="linha"></div>
+	</div>
+
+	<div class="cartoes">
+
+		<div class="informacoes">
+			<img src="../img/cartao.png" alt="Imagem sobre nós">
+			<p>Sobre nós</p>
+			<a class="confira" href="sobre-nos.html">
+			Confira
+			<i class="fi fi-rr-arrow-small-right animated-arrow"></i>
+			</a>
+		</div>
+
+		<div class="informacoes">
+			<img src="../img/serviços.png" alt="Imagem de serviços">
+			<p>Serviços</p>
+			<a class="confira" href="servicos.html">
+			Confira
+			<i class="fi fi-rr-arrow-small-right animated-arrow"></i>
+			</a>
+		</div>
+
+		<div class="informacoes">
+			<img src="../img/contatos.png" alt="Imagem de contatos">
+			<p>Contatos</p>
+			<a class="confira" href="contatos.html">
+			Confira
+			<i class="fi fi-rr-arrow-small-right animated-arrow"></i>
+			</a>
+		</div>
+
+		</div>
+
+	</main>
+
+	<footer>
+		<p>
+			WG Consultoria e Monitoramento - 2025 © todos os direitos reservados
+		</p>
+    </footer>
+		<script src="./index.js"></script>
+	
+</body>
+	<script>
+		function abrirMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.add("aparecer");
+		}
+
+		function fecharMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.remove("aparecer");
+		}
+
+	</script>
+</html>

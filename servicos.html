@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="./servicos.css">
+<link rel="stylesheet" href="./servicos-media-query.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+<script src="https://kit.fontawesome.com/e0b8a276c3.js" crossorigin="anonymous"></script>
+
+<link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+<link rel="manifest" href="../favicon_io/site.webmanifest">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down_circle" />
+
+<title>Serviços</title>
+    
+</head>
+</head>
+<body>
+      <header>
+        <!-- Código responsivo -->
+        <a href="index.html">
+            <div class="imagem-responsiva">
+                <!-- imagem chamada no css/sobre-nos-mediaquery.css -->
+            </div>
+        </a>
+
+        <div id="menu-lateral" class="menu-lateral">
+          <button id="fechar" onclick="fecharMenu()"> x </button>
+          <div class="item-menu">
+            <a href="index.html">Início</a>
+          </div>
+          <div class="item-menu">
+            <a href="sobre-nos.html">Sobre Nós</a>
+          </div>
+          <div class="item-menu">
+            <a href="servicos.html">Serviços</a>
+          </div>
+          <div class="item-menu">
+            <a href="contatos.html">Contatos </a>
+          </div>
+        </div>
+        <div class="menu-responsivo">
+            <!-- futuramente alterado -->
+              <i class="fa-solid fa-bars" onclick="abrirMenu()"></i>
+        </div>
+
+        <ul>
+            <a href="index.html">Inicio</a>
+            <a href="sobre-nos.html">Sobre Nós</a>
+            <a href="contatos.html">Contatos</a>
+        </ul>
+    </header>
+
+    <main>
+
+      <div class="container">
+        <div class="servico">
+          <!-- imagem aqui -->
+        </div>
+        <div id="imagem-400px">
+          <img src="../img/servico-smartphone.jpg" alt="imagem de serviços">
+        </div>
+        <div id="imagem-600px">
+          <img src="../img/servico-smartphone-500px.jpg" alt="imagem de serviços">
+        </div>
+      </div>
+        
+    <div class="container2">
+
+      <button class="botao" onclick="mostrarTexto('servicos')">
+        <p>Nossos Serviços</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="servicos" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('logistica')">
+        <p>Acompanhamento Logístico</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="logistica" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('pronta')">
+        <p>Pronta-Resposta</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="pronta" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('sindicancia')">
+        <p>Sindicância de Roubo</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="sindicancia" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('investigacao')">
+        <p>Investigação de Sinistro</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="investigacao" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('inteligencia')">
+        <p>Operações de Inteligência</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="inteligencia" class="descricao"></p>
+
+      <button class="botao" onclick="mostrarTexto('regulacao')">
+        <p>Regulação de Sinistros</p>
+        <span class="material-symbols-outlined">arrow_drop_down_circle</span>
+      </button>
+      <p id="regulacao" class="descricao"></p>
+
+    </div>
+
+    <div class="frase-serviço">
+      <h1>
+        Seu patrimônio é valioso demais para correr riscos
+      </h1>
+      <p>
+        Oferecemos segurança estratégica para proteger sua empresa, <br>
+        impulsionar resultados e garantir o futuro do seu negócio
+      </p>
+    </div>
+    </main>
+
+     <footer>
+      <p>
+        WG Consultoria e Monitoramento - 2025 © todos os direitos reservados
+      </p>
+    </footer>
+
+    <script src="./serviços.js"></script>
+</body>
+  <script>
+		function abrirMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.add("aparecer");
+		}
+
+		function fecharMenu() {
+			var minhaDiv = document.getElementById("menu-lateral");
+			minhaDiv.classList.remove("aparecer");
+		}
+
+	</script>
+</html>
