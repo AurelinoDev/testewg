@@ -41,7 +41,7 @@ header{
   margin: 50px 0px 50px 0px;
   width: 85%;
   height: 400px;
-  background-image: url(../img/serviço2.jpg);
+  background-image: url(./img/serviço2.jpg);
   background-size: cover;
 }
 
