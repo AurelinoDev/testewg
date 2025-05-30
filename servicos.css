@@ -39,9 +39,9 @@ header{
 
 .servico{
   margin: 50px 0px 50px 0px;
-  width: 85%;
+  width: 100%;
   height: 400px;
-  background-image: url(./img/serviço2.jpg);
+  background-image: url(./img/serviço2.jpg); 
   background-size: cover;
 }
 

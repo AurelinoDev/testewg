@@ -36,8 +36,8 @@
         justify-content: center;
     }
 
-    .servico{
-        width: 80%;
+    .servico img{
+        width: 100%;
         height: 50px;
         border-radius: 25px;
     }
@@ -54,6 +54,9 @@
         align-items: center;
         justify-content: space-between;
         width: 90%;
+        font-size: 0.1rem;
+        border: 1px solid red;
+
     }
 
     .botao > p{

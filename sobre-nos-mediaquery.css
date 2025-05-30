@@ -46,15 +46,21 @@
         height: fit-content;
     }
 
+    .informacao h1{
+        font-size: 1.3rem;
+    }
+
     .icone-titulo{
+        display: flex;
         justify-content: center;
         margin: 15px 0px 0px 0px;
-        margin-bottom: 10px;
     }
 
     .titulo, .icone{
         margin: 0px 3px 0px 3px;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        /* border: 1px solid red; */
+
     }
 
     .descricao-titulo{
@@ -71,14 +77,23 @@
     }
 
     .valores{
+        /* border: 1px solid red; */
         scale: 0.9;
         width: 90%;
     }
+    .valores h1{
+        /* border: 1px solid red; */
+        margin-right: 35px;
+    }
 
     #topicos-valores{
-        width: 90%;
+        /* border: 1px solid red; */
+        align-items: center;
+        justify-content: center;
+        width: 80%;
         margin: 5px 0px 0px 0px;
         height: fit-content;
+        display: flex;
     }
 
     .topico{
